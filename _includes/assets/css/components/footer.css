@@ -1,5 +1,5 @@
 .Footer {
-  border-top: var(--border-width-sm) solid var(--theme-color-accent-secondary);
+  /* border-top: var(--border-width-sm) solid var(--theme-color-accent-secondary); */
 }
 
 .Footer-List {

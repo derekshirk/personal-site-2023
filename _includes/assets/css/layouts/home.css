@@ -11,10 +11,11 @@
 
 @media (--lg-viewport) {
   .Grid--homeHero {
-    grid-template-columns: 50% 45%;
+    grid-template-columns: 20% 75%;
+    
     margin: 0 auto;
     max-width: 95vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     padding-left: 0;
     padding-right: 0;
     
@@ -24,8 +25,8 @@
 @media (min-width: 1860px) {
   .Grid--homeHero {
     min-height: 56vh;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    /* padding-left: 8rem; */
+    /* padding-right: 8rem; */
   }
 }
 
