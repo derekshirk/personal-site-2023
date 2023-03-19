@@ -1,0 +1,47 @@
+/**
+ * @Define utilities
+ */
+
+/**
+ * Background Color
+ */
+
+.u-bgPurple {
+  background-color: var(--color-purple) !important;
+}
+
+.u-bgDarkPurple {
+  background-color: var(--color-dark-purple) !important;
+}
+
+.u-bgDarkPurpleAlt {
+  background-color: var(--color-dark-purple-alt) !important;
+}
+
+.u-bgGrape {
+  background-color: var(--color-dark-grape) !important;
+}
+
+.u-bgPink {
+  background-color: var(--color-pink) !important;
+}
+
+.u-bgGreen {
+  background-color: var(--color-green) !important;
+}
+
+.u-bgBlue {
+  background-color: var(--color-blue) !important;
+}
+
+.u-bgMint {
+  background-color: var(--color-mint) !important;
+}
+
+.u-bgBlack {
+  background-color: var(--color-black) !important;
+}
+
+.u-bgWhite {
+  background-color: var(--color-white) !important;
+}

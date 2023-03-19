@@ -1,0 +1,39 @@
+{#
+  @todo
+  1. consider `ThemeSwitcher-action` instead of `ThemeSwitcher-action-item`
+  2. make css class name and js- class name consistent
+  3. add visually hidden class
+ #}
+
+<div class="ThemeSwitcher u-padLeft06">
+  <button
+    class="ThemeSwitcher-item js-theme-switcher"
+    id="activate-dark-mode"
+    data-color="var(--color-silver)"
+    data-color-accent-primary="var(--color-blue)"
+    data-color-accent-secondary="var(--color-gray-dark)"
+    data-color-accent-tertiary="var(--color-gray-dark)"
+    data-color-background="var(--color-black-alt)"
+    data-color-max-contrast="var(--color-white)"
+    data-favicon="/static/img/favicon-blue.png"
+    data-theme="dark"
+  >
+    {% include "svg/icon-moon-filled.svg" %}
+    <span class="u-hidden">Switch to dark mode</span>
+  </button>
+  <button
+    class="ThemeSwitcher-item js-theme-switcher"
+    id="activate-light-mode"
+    data-color="var(--color-gray-666)"
+    data-color-accent-primary="var(--color-purple)"
+    data-color-accent-secondary="var(--color-blue-gray)"
+    data-color-accent-tertiary="var(--color-white-alt)"
+    data-color-background="var(--color-cool-blue)"
+    data-color-max-contrast="var(--color-black)"
+    data-favicon="/static/img/favicon-purple.png"
+    data-theme="light"
+  >
+    {% include "svg/icon-sun-filled.svg" %}
+    <span class="u-hidden">Switch to light mode</span>
+  </button>
+</div>

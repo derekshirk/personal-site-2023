@@ -1,0 +1,44 @@
+.ContentHome-inner {
+  margin: 0 auto;
+  max-width: 1860px;
+}
+
+.Grid--homeHero {
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (--lg-viewport) {
+  .Grid--homeHero {
+    grid-template-columns: 50% 45%;
+    margin: 0 auto;
+    max-width: 95vw;
+    min-height: 50vh;
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
+}
+
+@media (min-width: 1860px) {
+  .Grid--homeHero {
+    min-height: 56vh;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Grid--homeShowcase {
+    grid-gap: 5%;
+    grid-template-columns: 1.5fr 2fr;
+  }
+}
+
+@media (--lg-viewport) {
+  .Grid--4Col {
+    grid-gap: 2%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

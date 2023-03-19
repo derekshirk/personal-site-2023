@@ -1,0 +1,76 @@
+/**
+ * TODO
+ * 1. This file needs some love. Let's improve it!
+ */
+
+.Container {
+  max-width: 2800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+@media (--md-viewport) {
+  .Container--wide {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (--lg-viewport) {
+  .Container--wide {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (--xl-viewport) {
+  .Container--wide {
+    max-width: 72vw;
+    margin: 0 auto;
+  }
+}
+
+.ContainerProse {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.ContainerProse--extra {
+  max-width: 64rem;
+}
+
+.ContentProse p {
+  margin-top: 0.5rem;
+}
+
+.SectionIntro {
+  border-bottom: 1px solid var(--theme-color-background);
+  border-bottom: 1px solid var(--theme-color-accent-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.Grid--smallThenBig {
+  grid-gap: 10%;
+}
+
+@media (--lg-viewport) {
+  .Grid--smallThenBig {
+    grid-gap: 10%;
+    grid-template-columns: 36% 54%;
+  }
+}
+
+@media (--md-viewport) {
+  .Grid--contact {
+    grid-gap: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (--lg-viewport) {
+  .Grid--contact {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

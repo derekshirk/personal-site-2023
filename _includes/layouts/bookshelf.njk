@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+section: reads
+class: Bookshelf
+permalink: /reads/index.html
+subtitle: "A non-exhaustive list of books I've read."
+---
+
+<section class="Container u-padTop2">
+  {% set bookslist = collections.books %}
+  {% include "components/bookshelf.njk" %}
+</section>

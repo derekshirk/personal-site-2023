@@ -1,0 +1,97 @@
+body {
+  color: var(--theme-color-text);
+  font-size: 1em;
+  font-family: var(--font-family), sans-serif;
+  letter-spacing: -0.033em;
+  @supports (font-variation-settings: normal) {
+    font-family: var(--font-family-variable), sans-serif;
+    font-variation-settings: "wght" 450;
+  }
+}
+
+p,
+pre,
+code {
+  line-height: 1.5;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+ol, 
+ul {
+  line-height: 1.6;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+}
+
+code,
+kbd,
+samp {
+  background-color: var(--theme-color-accent-secondary);
+  border-radius: var(--border-width-lg);
+  color: var(--theme-color-max-contrast);
+  font-size: 96%;
+  padding: 0.1rem 0.45rem;
+}
+
+strong {
+  font-variation-settings: "wght" 750;
+}
+
+::selection {
+  background-color: var(--theme-color-accent-primary);
+  color: var(--color-white);
+}
+
+:--headings {
+  color: var(--theme-color-max-contrast);
+  font-weight: bold;
+  font-weight: 800;
+  font-variation-settings: "wght" 800;
+  line-height: 1.18;
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--theme-color-accent-primary);
+  padding-bottom: .03em;
+  text-decoration: underline;
+  text-decoration-color: var(--theme-color-text);
+  transition: 
+    border-color 100ms ease, 
+    color 100ms ease;
+}
+
+a:hover {
+  color: var(--theme-color-max-contrast);
+  border-color: var(--theme-color-max-contrast);
+}
+
+:--headings a {
+  border: 0;
+  color: var(--theme-color-accent-primary);
+  padding-bottom: 0;
+  text-decoration: none;
+  transition: color 100ms ease;
+
+  .link-external {
+    width: 0.8em;
+    top: 5px;
+  }
+
+  .link-external path {
+    transition: fill 100ms ease;
+  }
+}
+
+:--headings a:hover {
+  color: var(--theme-color-max-contrast);
+
+  .link-external path {
+    fill: var(--theme-color-accent-primary);
+  }
+}

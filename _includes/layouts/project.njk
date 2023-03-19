@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+section: project
+---
+
+{# 
+ This file is not currently in use.
+ Keep it around as an example for future reference.
+ #}
+ 
+<article>
+
+  <section class="SectionIntro">
+    <h1>{{ title }}</h1>
+    <p class="u-textSize2 u-md-textSize3">
+      Subtitle goes here
+    </p>
+  </section>
+
+  {{ layoutContent | safe }}
+
+  <p>
+    <small>
+      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
+    </small>
+  </p>
+
+  {% if tags %}
+    <p>
+    {% for tag in tags %}
+      {%- if tag != "post" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+    </p>
+  {% endif %}
+
+</article>
+
+<nav>
+  <a href="{{ '/projects/' | url }}">← Project index</a>
+</nav>

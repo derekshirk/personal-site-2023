@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <style>
+    .foreground { fill: #fff; }
+    .background { fill: #7754b0; }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #0dd9e4; }
+    }
+  </style>
+  <path class="background" d="M0,0V16H16V0Z"/>
+  <path class="foreground" d="M7.57,3.25H3.9v9.5H7.45c3.48,0,5.47-2,5.47-4.81S11,3.25,7.57,3.25Zm-.16,7.07c-.9,0-.76-.7-.76-2.4s-.14-2.25.76-2.25h.22a2.33,2.33,0,0,1-.22,4.65Z"/>
+</svg>

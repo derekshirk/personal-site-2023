@@ -1,0 +1,18 @@
+<nav>
+  <ul class="u-listReset u-flex">
+  {%- for nav in collections.nav | sort(attribute="date") -%}
+    <li class="u-flex">
+      <a
+        class="Header-link u-borderNone u-flex u-flexAlignItemsCenter"
+        href="{{ nav.url | url }}"{% if nav.url == page.url %}
+        data-current="current item"{% endif %}
+      >
+        {{ nav.data.navtitle }}
+      </a>
+    </li>
+  {%- endfor -%}
+  <li class="ThemeSwitcher--lg">
+    {% include "patterns/theme-switcher.njk" %}
+  </li>
+  </ul>
+</nav>

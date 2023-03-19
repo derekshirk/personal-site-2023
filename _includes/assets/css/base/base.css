@@ -1,0 +1,95 @@
+@import "suitcss-base";
+
+@font-face {
+  font-family: var(--font-family);
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/inter/Inter-Regular.woff2") format("woff2"),
+       url("/static/fonts/inter/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: var(--font-family-variable);
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/static/fonts/inter/Inter-roman.var.woff2") format("woff2");
+}
+
+
+/**
+ * Force body to always meet viewport height
+ */
+
+html, 
+body {
+  height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--theme-color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+/**
+ * This is an important aspect of this site's sticky footer
+ * implementation. 
+ * See: https://css-tricks.com/couple-takes-sticky-footer/#there-is-flexbox
+ */
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/**
+ * Prevent media from overflowing its container horizontally
+ */
+
+img,
+svg,
+iframe,
+input {
+  max-width: 100%;
+}
+
+/**
+ * Prevent some media from detaching width from height in supported browsers
+ */
+
+img,
+svg {
+  height: auto;
+}
+
+/**
+ * Tables
+ */
+
+/**
+ * 1. Prevent double borders
+ * 2. Without this, th elements won't inherit their alignment predictably in
+ *    Safari. Setting alignment here makes it easier to override on the
+ *    containing element (if desired).
+ */
+
+table {
+  border-collapse: collapse; /* 1 */
+  text-align: left; /* 2 */
+}
+
+/**
+ * Make th alignment consistent with td alignment
+ */
+
+th {
+  text-align: inherit;
+}

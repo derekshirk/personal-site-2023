@@ -1,0 +1,17 @@
+input,
+textarea {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+}
+
+/**
+ * TODO
+ * 1. Replace `1px` with CSS custom property
+ */
+
+input,
+textarea {
+  border: 1px solid var(--color-black);
+}

@@ -1,0 +1,120 @@
+<section class="Grid-wrapper u-padBottom2">
+  <header class="Banner grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl u-flex u-flexWrap u-flexAlignItemsCenter u-pad3">
+    <div class="Banner-content">
+      <h4 class="Banner-label">
+        My Bookshelf
+      </h4>
+      <h2 class="Banner-title">
+        A collection of books I've enjoyed reading.
+      </h2>
+      <p class="Banner-subtitle u-spaceTop">
+        In the case of good books, the point is not to see how many of them you can get through, but rather how many can get through to you. – Mortimer J. Adler
+      </p>
+    </div>
+  </header>
+
+  {% for book in bookslist | reverse %}
+    {% if loop.first %}
+      <article class="Bookshelf-item grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl u-padBottomNone u-spaceTop1 u-lg-spaceTopNone">
+        {% if book.data.url %}
+          <a href="{{ book.data.url }}" class="Bookshelf-current Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l u-padBottomNone u-textUnderlineNone u-borderNone">
+        {% endif %}
+        <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-objectFitCover">
+          <figure class="Bookshelf-cover">
+            <picture>
+              <source 
+                srcset="{{ book.data.cover_avif }}" 
+                type="image/avif"
+              >
+              <source 
+                srcset="{{ book.data.cover_webp }}" 
+                type="image/webp"
+              >
+              <img 
+                src="{{ book.data.cover }}" 
+                alt="{{ book.data.title }} book cover"
+                class="Bookshelf-art"
+                width="600"
+                height="900"
+              >
+            </picture>
+          </figure>
+        </div>
+        <div class="Bookshelf-meta grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padRight3 u-padTopNone u-padLeftNone">
+          {% if book.data.title %}
+            <h3 class="u-block u-textGrow2 u-md-textGrow3 u-xl-textGrow4">
+              {{ book.data.title }}
+            </h3>
+          {% endif %}
+          <p class="Label">Currently Reading</p>
+          {% if book.data.author %}
+            <p class="u-theme-text-color">{{ book.data.author }}</p>
+          {% endif %}
+          {% if book.data.summary %}
+            <p class="u-textSize u-xl-textSize1 u-theme-text-color">
+              {{ book.data.summary }}
+            </p>
+          {% endif %}
+        </div>
+        {% if book.data.url %}
+          </a>
+        {% endif %}
+      </article>
+    {% endif %}
+  {% endfor %}
+
+</section>
+
+<section class="Bookshelf-content u-spaceTop">
+  {% for book in bookslist | reverse %}
+    {% if (loop.index > 1) and (not book.data.hidden) %}
+      <article class="Bookshelf-item">
+
+        {% if book.data.url %}
+          <a href="{{ book.data.url }}" class="Bookshelf-info u-borderNone">
+        {% endif %}
+          <figure class="Bookshelf-cover">
+            <picture>
+              <source 
+                srcset="{{ book.data.cover_avif }}" 
+                type="image/avif"
+              >
+              <source 
+                srcset="{{ book.data.cover_webp }}" 
+                type="image/webp"
+              >
+              <img 
+                src="{{ book.data.cover }}" 
+                alt="{{ book.data.title }} book cover"
+                class="Bookshelf-art"
+                {% if loop.index > 11 %}
+                loading="lazy"
+                {% endif %}
+                width="400"
+                height="600"
+              >
+            </picture>
+          </figure>
+        
+          <div class="Bookshelf-meta">
+            
+            {% if book.data.title %}
+              <h3 class="Bookshelf-itemTitle">
+                {{ book.data.title }}
+              </h3>
+            {% endif %}
+
+            {% if book.data.author %}
+              <p class="u-md-textShrink1">{{ book.data.author }}</p>
+            {% endif %}
+
+          </div>
+
+        {% if book.data.url %}
+          </a>
+        {% endif %}
+
+      </article>
+    {% endif %}
+  {% endfor %}
+</section>

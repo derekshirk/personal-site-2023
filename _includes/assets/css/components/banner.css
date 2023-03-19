@@ -1,0 +1,90 @@
+.Banner {
+  background-color: var(--theme-color-accent-secondary);
+  padding: 1rem;
+  position: relative;
+}
+
+.Banner--simple {
+  background-color: transparent;
+  padding: 0;
+}
+
+@media (--lg-viewport) {
+  .Banner--simple {
+    padding: 1rem;
+  }
+}
+
+@media (--md-viewport) {
+  .Banner--offset {
+    padding: 2rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner--offset {
+    margin-left: 8vw;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner--offset .Banner-content {
+    transform: translateX(-9vw);
+  }
+}
+
+.Banner-label {
+  color: var(--theme-color-accent-primary);
+  font-size: 0.9rem;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+@media (--lg-viewport) {
+  .Banner-label {
+    font-size: 1.2rem;
+  }
+}
+
+.Banner-title {
+  font-size: 2rem;
+  color: var(--theme-color-max-contrast);
+}
+
+@media (--md-viewport) {
+  .Banner-title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (--xl-viewport) {
+  .Banner-title {
+    font-size: 3rem;
+  }
+}
+
+@media (--xxl-viewport) {
+  .Banner-title {
+    font-size: 4.3rem;
+  }
+}
+
+.Banner-subtitle {
+  font-size: 1.2rem;
+}
+
+@media (--xl-viewport) {
+  .Banner-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+.Banner-subtitle p {
+  line-height: 1.56;
+}

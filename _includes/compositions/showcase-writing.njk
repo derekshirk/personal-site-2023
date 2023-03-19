@@ -1,0 +1,18 @@
+<div
+  class="Container ContainerProse--extra Grid 
+         Grid--smallThenBig u-padTop6 u-lg-spaceBottom6 u-padBottom6 u-padSides u--lg-spaceTop6"
+>
+  <div>
+    <h3 class="u-textSize3 u-lg-textSize4">
+      Featured articles
+    </h3>
+    <p class="u-textSize2">
+      Curated articles published here, or elsewhere on the web. 
+    </p>
+  </div>
+
+  <div class="HomePosts">
+    {% set postslist = collections.latest %}
+    {% include "components/postslist.njk" %}
+  </div>
+</div>

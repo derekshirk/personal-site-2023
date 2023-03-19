@@ -1,0 +1,9 @@
+<ul class="Footer-List u-listReset">
+  {% for item in social.sites %}
+    <li class="Footer-Links">
+      <a href="{{ item.url }}">
+        {{ item.name | capitalize }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
