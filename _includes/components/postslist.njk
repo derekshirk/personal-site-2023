@@ -1,24 +1,39 @@
 <section class="u-spaceItems">
   {% for post in postslist | reverse %}
-    <article
-      {% if post.url == url %} data-current="current item"{% endif %}>
-      <h2 class="u-textSize3 u-md-textSize4">
-        <a class="u-flex " href="{{ post.url | url }}">
-          {% if post.data.title %}
-            <span class="u-spaceRight02">{{ post.data.title }}</span>
-             {% if post.data.link %}
-              {% include "svg/icon-link.svg" %}
-             {% endif %}
-          {% else %}
-            Untitled
-          {% endif %}
+    
+    
+      <article class="ArticleCard u-spaceEnds6" {% if post.url == url %} data-current="current item"{% endif %}>
+        <a class="ArticleCard-Action" href="{{ post.url | url }}">
+         
+          <p class="PostDate">
+            {{ post.date | readableDate }}
+          </p>
+
+          <h2 class="PostTitle u-textSize3 u-md-textSize4 u-flex">
+            
+              <!-- {% if post.data.title %} -->
+                <span class="u-spaceRight02">{{ post.data.title }}</span>
+                <!-- {% if post.data.link %}
+                  {% include "svg/icon-link.svg" %}
+                {% endif %}
+              {% else %}
+                Untitled -->
+              <!-- {% endif %} -->
+          </h2>
+
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4214 10.1152C20.4214 10.8056 19.8617 11.3652 19.1714 11.3652H1.67139C0.98103 11.3652 0.421387 10.8056 0.421387 10.1152C0.421387 9.42488 0.98103 8.86524 1.67139 8.86524H19.1714C19.8617 8.86524 20.4214 9.42488 20.4214 10.1152Z" fill="var(--theme-color-text)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.0553 9.23135C20.5434 9.71951 20.5434 10.511 20.0553 10.9991L11.3053 19.7491C10.8171 20.2373 10.0257 20.2373 9.53751 19.7491C9.04935 19.261 9.04935 18.4695 9.53751 17.9814L17.4036 10.1152L9.53751 2.24912C9.04935 1.76096 9.04935 0.969507 9.53751 0.481351C10.0257 -0.0068045 10.8171 -0.0068045 11.3053 0.481351L20.0553 9.23135Z" fill="var(--theme-color-text)"/>
+          </svg>
+
+        <!-- {% if post.data.summary %}
+          <p class="u-textSize1">
+            {{ post.data.summary }}
+          </p>
+        {% endif %} -->
+
         </a>
-      </h2>
-      {% if post.data.summary %}
-        <p class="u-textSize1">
-          {{ post.data.summary }}
-        </p>
-      {% endif %}
-    </article>
+      </article>
+    
+
   {% endfor %}
 </section>

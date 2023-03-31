@@ -1,18 +1,8 @@
 {
   "sites": [
     {
-      "name": "Email",
-      "url": "mailto:derekshirk@gmail.com?subject=👋 Hello",
-      "icon": ""
-    },
-    {
-      "name": "GitHub",
-      "url": "https://github.com/derekshirk",
-      "icon": ""
-    },
-    {
-      "name": "CodePen",
-      "url": "https://codepen.io/derekshirk",
+      "name": "Figma",
+      "url": "https://www.figma.com/@derekshirk",
       "icon": ""
     },
     {
@@ -23,11 +13,6 @@
     {
       "name": "Linkedin",
       "url": "https://www.linkedin.com/in/derekshirk",
-      "icon": ""
-    },
-    {
-      "name": "Dribbble",
-      "url": "https://dribbble.com/derekshirk",
       "icon": ""
     }
   ]

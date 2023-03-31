@@ -1,5 +1,5 @@
 ---
-layout: layouts/now.njk
+layout: layouts/about.njk
 title: About
 tags:
   - nav

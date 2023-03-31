@@ -100,7 +100,7 @@
    * Negative scale steps swap `-` for `0`.
    */
 
-  @for $step from 6 to 1 {
+  @for $step from 16 to 1 {
     @mixin spaceBetweenStep calc(-$(step)msu * 1rem), 0$(step), space, $prefix;
     @mixin spaceBetweenStep calc(-$(step)msu * 1em), 0$(step), stagger, $prefix;
     @mixin spaceOutsideStep calc(-$(step)msu * 1rem), 0$(step), $prefix;
@@ -122,7 +122,7 @@
    * Positive scale steps.
    */
 
-  @for $step from 1 to 6 {
+  @for $step from 1 to 16 {
     @mixin spaceBetweenStep calc($(step)msu * 1rem), $step, space, $prefix;
     @mixin spaceBetweenStep calc($(step)msu * 1em), $step, stagger, $prefix;
     @mixin spaceOutsideStep calc($(step)msu * 1rem), $step, $prefix;

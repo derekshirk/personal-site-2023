@@ -9,6 +9,12 @@ body {
   }
 }
 
+@media (--lg-viewport) {
+  body {
+    font-size: 1.7em;
+  }
+}
+
 p,
 pre,
 code {
@@ -59,7 +65,7 @@ strong {
 a {
   color: var(--theme-color-accent-primary);
   padding-bottom: .03em;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: var(--theme-color-text);
   transition: 
     border-color 100ms ease, 
@@ -67,7 +73,7 @@ a {
 }
 
 a:hover {
-  color: var(--theme-color-max-contrast);
+  text-decoration: underline;
   border-color: var(--theme-color-max-contrast);
 }
 
@@ -89,9 +95,16 @@ a:hover {
 }
 
 :--headings a:hover {
-  color: var(--theme-color-max-contrast);
+  /* color: rgb(var(--theme-color-max-contrast)); */
+  text-decoration-color: var(--theme-color-max-contrast);
 
   .link-external path {
-    fill: var(--theme-color-accent-primary);
+    fill: rgb(var(--theme-color-accent-primary));
   }
+}
+
+.SectionTitle {
+  font-size: 1em;
+  font-variation-settings: "wght" 720;
+  opacity: 0.6;
 }

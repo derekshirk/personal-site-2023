@@ -10,6 +10,12 @@
   width: 100%;
 }
 
+@media (--lg-viewport) {
+  .Container {
+    padding: 0;
+  }
+}
+
 @media (--md-viewport) {
   .Container--wide {
     max-width: 80vw;
@@ -33,7 +39,7 @@
 
 .ContainerProse {
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 .ContainerProse--extra {
