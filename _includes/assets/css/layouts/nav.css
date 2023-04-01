@@ -1,0 +1,5 @@
+.PrimaryNav {
+  background-color: rgba(var(--theme-color-max-contrast), 8%);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+}

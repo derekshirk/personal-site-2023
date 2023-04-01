@@ -14,17 +14,17 @@
 
 .ThemeSwitcher-item {
   align-items: center;
-  background-color: var(--theme-color-accent-secondary);
+  /* background-color: var(--theme-color-accent-secondary); */
   color: var(--theme-color-max-contrast);
   border-radius: 50%;
-  border: var(--border-width-md) solid var(--theme-color-accent-secondary);
+  /* border: var(--border-width-md) solid var(--theme-color-accent-secondary); */
   display: flex;
   /* font-size: 1.5em; */
   height: var(--theme-switcher-size);
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: var(--theme-switcher-size);
+  /* width: var(--theme-switcher-size); */
   display: none;
   transition: 
     border-color 100ms ease,
@@ -38,7 +38,7 @@
   &:focus,
   &:hover  {
     outline: 0;
-    border: var(--border-width-md) solid var(--theme-color-accent-primary);
+    /* border: var(--border-width-md) solid var(--theme-color-accent-primary); */
     color: var(--theme-color-accent-primary);
   }
   &.is-active {
