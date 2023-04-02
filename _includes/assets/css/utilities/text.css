@@ -27,18 +27,18 @@
   @mixin textSizeStep calc(0msu * 1rem), Size, $prefix;
   @mixin lineHeightStep 0msu, , $prefix;
 
-  @for $step from 1 to 6 {
+  @for $step from 1 to 9 {
     @mixin textSizeStep calc($(step)msu * 1rem), Size$(step), $prefix;
   }
 
-  @for $step from 6 to 1 {
+  @for $step from 9 to 1 {
     @mixin textSizeStep calc(-$(step)msu * 1em), Shrink$(step), $prefix;
   }
 
   @mixin textSizeStep calc(0msu * 1em), Shrink, $prefix;
   @mixin textSizeStep calc(0msu * 1em), Grow, $prefix;
 
-  @for $step from 1 to 6 {
+  @for $step from 1 to 9 {
     @mixin textSizeStep calc($(step)msu * 1em), Grow$(step), $prefix;
   }
 

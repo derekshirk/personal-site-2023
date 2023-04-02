@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         angle = theta*180/Math.PI + 360;
 
     pupil.style.transform = `translateX(${R - r +"px"}) rotate(${angle + "deg"})`;
-    pupil.style.transformOrigin = `${r +"px"} center`;
+    pupil.style.transformOrigin = `${"-" + r +"px"} center`;
     }); 
   }
 
@@ -129,16 +129,16 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem("userThemePreference", theme);
 
       // testing
-      // console.log(
-      //   color,
-      //   colorAccentPrimary,
-      //   colorAccentSecondary,
-      //   colorAccentTertiary,
-      //   colorBackground,
-      //   colorMaxContrast,
-      //   themeFavicon,
-      //   theme        
-      // );
+      console.log(
+        color,
+        colorAccentPrimary,
+        colorAccentSecondary,
+        colorAccentTertiary,
+        colorBackground,
+        colorMaxContrast,
+        themeFavicon,
+        theme        
+      );
 
     });
   });

@@ -11,7 +11,8 @@
 
 @media (--lg-viewport) {
   .Illustration-whale {
-    max-width: 100%;
+    max-width: 25vw;
+    max-width: 226px; 
   }
 }
 

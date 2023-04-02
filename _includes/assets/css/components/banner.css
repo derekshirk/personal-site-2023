@@ -48,6 +48,7 @@
 
 .Banner-title {
   font-size: 2rem;
+  font-variation-settings: "wght" 600;
   color: var(--theme-color-max-contrast);
 }
 
