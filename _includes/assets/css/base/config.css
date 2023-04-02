@@ -27,12 +27,12 @@
  */
 
 :root {
-  --theme-color-background: var(--color-white);
-  --theme-color-accent-primary: var(--color-blue);
-  --theme-color-accent-secondary: var(--color-blue-gray);
-  --theme-color-accent-tertiary: var(--color-white-alt);
-  --theme-color-text: var(--color-gray-dark);
-  --theme-color-max-contrast: var(--color-black);
+  --theme-color-background: rgb(var(--color-black));
+  --theme-color-accent-primary: var(--color-purple);
+  --theme-color-accent-secondary: var(--color-gray-dark);
+  --theme-color-accent-tertiary: var(--color-gray-dark);
+  --theme-color-text: var(--color-silver);
+  --theme-color-max-contrast: var(--color-white);
 }
 
 @media (prefers-color-scheme: dark) {
