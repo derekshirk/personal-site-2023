@@ -38,6 +38,26 @@ article {
   min-width: 23%;
 }
 
-.PostTitle {
+.PostsListTitle {
   width: 70%;
+}
+
+.PostTitle {
+  font-size: 4.8rem;
+}
+
+.PostBody {
+
+  p {
+    line-height: 1.6;
+    
+    &:not(:last-child)  {
+      margin-bottom: 4rem;
+    }
+  }
+
+  ol, ul { 
+    margin-bottom: 4rem;
+  }
+ 
 }

@@ -50,6 +50,7 @@
   font-size: 2rem;
   font-variation-settings: "wght" 600;
   color: var(--theme-color-max-contrast);
+  line-height: 1.3;
 }
 
 @media (--md-viewport) {
