@@ -42,13 +42,13 @@ body {
  * See: https://css-tricks.com/couple-takes-sticky-footer/#there-is-flexbox
  */
 
-.content {
+/* .content {
   flex: 1 0 auto;
 }
 
 footer {
   flex-shrink: 0;
-}
+} */
 
 /**
  * Prevent media from overflowing its container horizontally
