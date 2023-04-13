@@ -1,5 +1,5 @@
 .Illustration-whale {
-  max-width: 84vw;
+  max-width: 56vw;
   margin: 0 auto;
 }
 
@@ -26,5 +26,15 @@
 @media (min-width: 1500px) {
   .Illustration-hippo {
     max-width: 60vw;
+  }
+}
+
+.SiteDescription {
+  margin-top: 2em;
+}
+
+@media (--md-viewport) {
+  .SiteDescription {
+    margin-top: 0em;
   }
 }

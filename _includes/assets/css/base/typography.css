@@ -54,7 +54,7 @@ strong {
 }
 
 :--headings {
-  color: var(--theme-color-max-contrast);
+  color: rgb(var(--theme-color-max-contrast));
   font-weight: bold;
   font-weight: 800;
   font-variation-settings: "wght" 800;
@@ -74,12 +74,13 @@ a {
 
 a:hover {
   text-decoration: underline;
-  border-color: var(--theme-color-max-contrast);
+  border-color: rgb(var(--theme-color-max-contrast));
 }
 
 :--headings a {
   border: 0;
-  color: var(--theme-color-accent-primary);
+  /* color: var(--theme-color-accent-primary); */
+  color: var(--theme-color-max-contrast);
   padding-bottom: 0;
   text-decoration: none;
   transition: color 100ms ease;
@@ -104,7 +105,14 @@ a:hover {
 }
 
 .SectionTitle {
-  font-size: 1em;
-  font-variation-settings: "wght" 720;
-  opacity: 0.6;
+  font-size: 1.25rem;
+  opacity: 1;
+}
+
+@media (--md-viewport) {
+  .SectionTitle {
+    font-size: 1em;
+    font-variation-settings: "wght" 720;
+    opacity: 0.6;
+  }
 }
