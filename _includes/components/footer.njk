@@ -1,104 +1,39 @@
-<footer class="Footer u-spaceEnds16">
+<footer class="Footer u-spaceTop6 u-lg-spaceEnds16">
   
   <div class="Container">
     {% include "svg/illustration-wavy-line.svg" %}
   </div>
   
-  <div class="ContentHome-inner Grid Grid--Footer u-spaceEnds12">
+  <div class="Footer-inner Grid Grid--Footer u-spaceEnds3 u-lg-spaceEnds12">
 
-      <div>
-
+      <div class="FooterSection">
         <div class="Grid Grid--FooterWhaleHello">
           <div class="Illustration-whale">
             {% include "svg/illustration-whale-LTR.svg" %}
           </div>
-          <div>
+          <div class="SiteDescription">
             <strong>Whale Hello World</strong>
-            <p class="u-textShrink1">I built this site with HTML, CSS, Javascript, and Eleventy. You can find the GitHub repository <a href="https://github.com/derekshirk/personal-site-2023">here</a>.</p>
+            <p>I built this site with HTML, CSS, Javascript, and Eleventy. You can find the GitHub repository <a href="https://github.com/derekshirk/personal-site-2023">here</a>.</p>
           </div>
         </div>
    
-        <div class="Grid Grid--FooterLinks u-textShrink1 u-spaceTop10">
-          <div class="u-md-spaceRight5 u-spaceTop u-md-spaceTopNone">
-            <h4 class="u-textGrow">{{pkg.author.name}}</h4>
-           
-            <div class="Grid Grid--2x2 u-textShrink1 u-spaceTop01">
-              <ul class="Footer-List u-listReset u-spaceItems">
-                <li class="Footer-Links">
-                  <a href="/">Home</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/about">About</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/writes">Writing</a>
-                </li>
-              </ul>
-
-              <ul class="Footer-List u-listReset u-spaceItems">
-                <li class="Footer-Links">
-                  <a href="/reads">Bookshelf</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/testimonials">Testimonials</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/now">Now</a>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-          
-          <div class="u-md-spaceRight5 u-spaceTop u-md-spaceTopNone">
-            <h4 class="u-textGrow">Connect</h4>
-            <!-- {% include "compositions/showcase-social-media.njk" %} -->
-
-            <div class="Grid Grid--2x2 u-textShrink1 u-spaceTop01">
-              <ul class="Footer-List u-listReset u-spaceItems">
-                <li class="Footer-Links">
-                  <a href="/">Home</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/about">About</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/writes">Writing</a>
-                </li>
-              </ul>
-
-              <ul class="Footer-List u-listReset u-spaceItems">
-                <li class="Footer-Links">
-                  <a href="/reads">Bookshelf</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/testimonials">Testimonials</a>
-                </li>
-                <li class="Footer-Links">
-                  <a href="/now">Now</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-       
-
+        {% include "compositions/footer-links.njk" %}
       </div>
 
-      <div>
+      <div class="FooterSection FooterPromos u-spaceTop4">
+       
         <div class="Callout">
           <header>
             <h4>Checkout my Bookshelf</h4>
           </header>
-          <p class="u-textShrink1">I’ve created a list of some books that have had a positive impact on my life. <a href=""> Check it out</a>.</p>
+          <p>I’ve created a list of some books that have had a positive impact on my life. <a href=""> Check it out</a>.</p>
         </div>
         
-        <div class="Callout u-spaceTop6">
+        <div class="Callout u-spaceTop u-lg-spaceTop6">
           <header>
             <h4>Read Some Testimonials</h4>
           </header>
-          <p class="u-textShrink1">I’ve worked with some incredibly talented and kind teammates. I’ve captured <a href="">a few testimonials here</a>.</p>
+          <p>I’ve worked with some incredibly talented and kind teammates. I’ve captured <a href="">a few testimonials here</a>.</p>
         </div>
         
       </div>

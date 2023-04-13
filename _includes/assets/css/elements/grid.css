@@ -12,6 +12,13 @@
   display: grid;
 }
 
+@media (--md-viewport) {
+  .Grid-lg-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .Grid-about {
   grid-template-columns: repeat(2, 1fr);
 }

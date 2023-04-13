@@ -5,41 +5,83 @@ article {
 }
 
 .ArticleCard {
+  border-top: none;
   padding-bottom: 0;
- 
-  display: flex;
+}
+
+.ArticleCard:not(:first-of-type) {
+  border-top: 1px solid rgba(var(--theme-color-max-contrast), 23%)));
+}
+
+@media (--md-viewport) {
+  .ArticleCard:not(:first-of-type) {
+    border-top: none;
+  }
+  
 }
 
 .ArticleCard-Action {  
-  background-color: rgba(var(--theme-color-max-contrast), 2%);
-  border-radius: 16px;
-  display:flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 100%;
-  padding: 48px 40px;
-
-  &:hover {
-    background-color: rgba(var(--theme-color-max-contrast), 3%);
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 
   h2 {
     margin-bottom: 0;
   }
 }
 
+
+@media (--md-viewport) {
+ .ArticleCard-Action {
+  align-items: center;
+  background-color: rgba(var(--theme-color-max-contrast), 2%);
+  border-radius: 16px;
+  display:flex;
+  justify-content: space-between;
+  padding: 48px 40px;
+  &:hover {
+    background-color: rgba(var(--theme-color-max-contrast), 3%);
+    text-decoration: none;
+  }
+ }
+}
+
+
+.ArticleCard-Icon {
+  min-width: 21px;
+}
+
 .PostDate {
   color: var(--theme-color-text);
   text-decoration: none;
-  font-size: 1.2rem;
-  min-width: 23%;
+}
+
+
+@media (--md-viewport) {
+  .PostDate {
+    font-size: 1.2rem;
+    min-width: 23%;
+  }
 }
 
 .PostsListTitle {
-  width: 70%;
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 580;
+}
+
+@media (--md-viewport) {
+  .PostsListTitle {
+    /* width: 70%; */
+  }
+}
+
+.GridPostTitle {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
 }
 
 .PostTitle {
