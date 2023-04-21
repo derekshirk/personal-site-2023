@@ -4,19 +4,19 @@ section: testimonials
 permalink: /testimonials/index.html
 ---
 
-<div class="Container u-padTop1 u-md-padTop3">
+<div class="Container Container-testimonials u-padTop1 u-md-padTop3">
   
   <section class="u-lg-padTop6 u-spaceItems">
     <header>
-      <h1 class="u-textGrow6">{{ title }}</h1>
-       <p>My place on the internet where I share thoughts, experiences, and projects from my experience in the design industry.</p>
+      <h1 class="">{{ title }}</h1>
+       <p>I’ve worked with many talented and kind teammates. Here are a few testimonals I've collected from a few.</p>
     </header>
     
-    <div class="u-textGrow1 u-staggerItems02 u-spaceTop u-md-spaceTop6">
+    <div class="u-staggerItems02 u-spaceTop u-md-spaceTop6">
       {% set testimonials = collections.testimonials %}
       <ul class="Grid-wrapper Grid--gapLarge u-listReset u-spaceBottom6">
       {% for testimonial in testimonials | reverse %}
-        <li class="Testimonial grid-whole@xs grid-whole@s grid-whole@m grid-half@l grid-half@xl">
+        <li class="Testimonial grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-lg-textShrink1">
           <div class="Testimonial-content">
             {{ testimonial.templateContent | safe }}
           </div>
