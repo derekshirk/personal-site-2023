@@ -8,6 +8,8 @@ tags:
   - testimonial
 ---
 
-I worked with Derek on a multi-year project and enjoyed our time collaborating on user interface and design system tasks.
+I enjoyed my time collaborating with Derek on user interface and design system tasks. Derek is patient, an excellent listener, and a great teammate. He always strives to ensures the results find technical, functional, inclusive, and visual harmony. 
 
-Derek is patient, an excellent listener, and a great teammate. He is open-minded and graceful at giving and receiving feedback. He always strives to design inclusive experiences and ensures the results find technical, functional, and visual harmony. I highly recommend Derek as he continues forward in his career.
+
+<!-- He is open-minded and graceful at giving and receiving feedback. 
+I highly recommend Derek as he continues forward in his career. -->

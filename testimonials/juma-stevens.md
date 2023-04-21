@@ -8,6 +8,8 @@ tags:
   - testimonial
 ---
 
-Derek is an absolute pleasure to work with. He is an exceptionally talented designer and excellent communicator. No matter how many tasks are in his queue, Derek always maintains superb consistency and knows how to prioritize work to keep the team moving forward.
+Derek is an absolute pleasure to work with. He is an exceptionally talented designer and excellent communicator. I really admire Derek’s measured professionalism and empathy when communicating with the team during challenging times, such as fast approaching deadlines.
 
-I really admire Derek’s measured professionalism and empathy when communicating with the team during challenging times, such as fast approaching deadlines. Derek is an amazing addition to any team and a driven team player.
+<!-- No matter how many tasks are in his queue, Derek always maintains superb consistency and knows how to prioritize work to keep the team moving forward.
+
+Derek is an amazing addition to any team and a driven team player. -->

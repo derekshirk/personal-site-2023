@@ -8,6 +8,7 @@ tags:
   - testimonial
 ---
 
-I worked with Derek on a long-term project and can say it was one of the best designer-developer experiences I've had. Derek helped onboard me to a new design system and ensured the system's standards were upheld.
+Working with Derek was one of the best designer-developer experiences I've had. His attention to detail is unmatched, yet he can also focus on the critical details that have the most impact. He always ensured that everyone was heard and was always willing to discuss important details.
 
-His attention to detail is unmatched, yet he can also focus on the critical details that have the most impact. He always ensured that everyone was heard and was always willing to discuss important details. I highly recommend Derek, and I hope that we can work together again.
+<!-- Derek helped onboard me to a new design system and ensured the system's standards were upheld.
+I highly recommend Derek, and I hope that we can work together again. -->

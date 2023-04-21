@@ -88,3 +88,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+.Container-testimonials {
+  max-width: 1550px;
+}

@@ -1,6 +1,6 @@
 .Grid-wrapper {
   display: grid;
-  grid-column-gap: 2vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 2vh;
   grid-template-columns: repeat(12, [col] 1fr [col]);
 }
