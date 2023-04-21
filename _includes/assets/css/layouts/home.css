@@ -3,6 +3,12 @@
   max-width: 1860px;
 }
 
+@media (--md-viewport) {
+  .ContentHome-inner {
+    padding: 0 1em;
+  }
+}
+
 .Container--Home {
   max-width: 1580px;
 }
