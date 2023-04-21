@@ -119,15 +119,30 @@
 }
 
 .Callout {
-  display: block;
   background-color: rgba(var(--theme-color-max-contrast), .04);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
-  /* font-size: 0.8em; */
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 @media (--md-viewport) { 
   .Callout { 
     padding: 2rem;
+    gap: 1.5rem;
   }
+}
+
+.Callout-icon {
+  background:rgba(var(--theme-color-max-contrast), .06);
+  border-radius: 100%;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.Callout-icon--md {
+  font-size: 1.8em;
 }
