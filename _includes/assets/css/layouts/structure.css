@@ -4,6 +4,7 @@
  */
 
 .Container {
+  /* max-width: 2300px; */
   max-width: 2300px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -39,8 +40,14 @@
 
 .ContainerProse {
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 62rem;
   padding: 0 1em;
+}
+
+@media (--lg-viewport) {
+  .ContainerProse {
+    padding: 0;
+  }
 }
 
 .ContainerProse--extra {

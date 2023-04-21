@@ -79,8 +79,8 @@ a:hover {
 
 :--headings a {
   border: 0;
-  /* color: var(--theme-color-accent-primary); */
-  color: var(--theme-color-max-contrast);
+  color: var(--theme-color-accent-primary);
+  /* color: var(--theme-color-max-contrast); */
   padding-bottom: 0;
   text-decoration: none;
   transition: color 100ms ease;
@@ -105,11 +105,11 @@ a:hover {
 }
 
 .SectionTitle {
-  font-size: 1.25rem;
+  font-size: 1.43rem;
   opacity: 1;
 }
 
-@media (--md-viewport) {
+@media (--lg-viewport) {
   .SectionTitle {
     font-size: 1em;
     font-variation-settings: "wght" 720;

@@ -2,7 +2,7 @@
 title: Introduction to Collabo Kit
 summary: I published my very frist Figma community resource file
 date: 2021-07-01
-link: https://www.figma.com/community/file/1017296085493894582)
+link: https://www.figma.com/community/file/1017296085493894582
 tags:
   - post
   - "2020"

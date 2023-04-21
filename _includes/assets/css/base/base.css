@@ -93,3 +93,18 @@ table {
 th {
   text-align: inherit;
 }
+
+/**
+ * Ratio sizing
+ */
+
+.ratio-16-9 {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+
+.ratio-9-16 {
+  aspect-ratio: 9 / 16;
+  width: 50%;
+}

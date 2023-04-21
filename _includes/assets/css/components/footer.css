@@ -1,6 +1,6 @@
 .Footer {
   margin: 0 auto;
-  max-width: 1860px;
+  max-width: 2300px;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@
 @media (--lg-viewport) {
   .Grid--Footer {
     grid-template-columns: 0.8fr 0.8fr;
-    grid-gap: 4%;
+    grid-gap: 8%;
   }
 }
 
@@ -50,7 +50,7 @@
   
 }
 
-@media (--lg-viewport) {
+@media (--md-viewport) {
   .Grid--FooterLinks {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
@@ -70,4 +70,18 @@
 
 .FooterPromos {
   /* margin-top: 2rem; */
+}
+
+@media (--md-viewport) {  
+  .FooterPromos {
+    display: grid;
+    gap: 4%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (--lg-viewport) {  
+  .FooterPromos {
+    display: block;
+  }
 }
