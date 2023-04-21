@@ -106,5 +106,12 @@ th {
 
 .ratio-9-16 {
   aspect-ratio: 9 / 16;
-  width: 50%;
+  width: 100%;
+}
+
+@media (--md-viewport) {
+  .ratio-9-16 {
+    aspect-ratio: 16 / 9;
+    width: 100%; 
+  }
 }
