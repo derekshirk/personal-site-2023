@@ -8,7 +8,7 @@ tags:
   - testimonial
 ---
 
-Derek is one of the most outstanding designers I've worked with. He is known for his thought leadership and investments in growing those around him. Derek is a fierce design leader wrapped in a friendly humble package.
+Derek is one of the most outstanding designers I've worked with. He is known for his thought leadership and investments in growing those around him. Derek is a fierce design leader wrapped in a friendly humble, package.
 
 <!-- No matter the role, Derek delivers innovative design solutions and is passionate about mentoring designers and teaching them the tools they need to exceed. 
 
