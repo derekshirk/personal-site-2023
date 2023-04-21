@@ -105,11 +105,11 @@ a:hover {
 }
 
 .SectionTitle {
-  font-size: 1.25rem;
+  font-size: 1.43rem;
   opacity: 1;
 }
 
-@media (--md-viewport) {
+@media (--lg-viewport) {
   .SectionTitle {
     font-size: 1em;
     font-variation-settings: "wght" 720;

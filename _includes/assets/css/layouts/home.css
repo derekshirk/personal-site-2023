@@ -44,7 +44,7 @@
   display: none;
 }
 
-@media (--md-viewport) {
+@media (--lg-viewport) {
   .HeroAvatar {
     display: block;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@media (--md-viewport) {
+@media (--xl-viewport) {
   .Grid--2Col {
     grid-gap: 2%;
     grid-template-columns: 20% 75%; 
@@ -93,17 +93,23 @@
 }
 
 
-.Grid-md--2x2 {
+@media (--md-viewport) {
+  .Grid--2x2 {
+    grid-gap: 16%;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 6rem;
+  }
+}
+
+.FooterLinksGrid {
   grid-gap: 16%;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 6rem;
 }
 
 @media (--md-viewport) {
-  .Grid--2x2 {
-    grid-gap: 16%;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 6rem;
+  .FooterLinksGrid {
+    grid-gap: auto;
   }
 }
 
