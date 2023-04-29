@@ -100,8 +100,9 @@ article {
   p:not(:last-child)  {
     margin-bottom: 2rem;
   }
+  
 
-  img  {
+  img, iframe {
     margin-bottom: 2rem;
   }
 

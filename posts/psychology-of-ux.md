@@ -8,7 +8,7 @@ tags:
   - "2020"
 ---
 
-24 hours before this event I had no idea I was going to be giving a lightning talk. That the way life goes sometimes. It was the week of the innogrual Innovation Week and Driveway. Remote teammates had flown into town, folks were meeting each other in personf for the first time and there were five days of fun activities, collaboration, and socializing. I was looking at the signups for the lighting talks and no one from the Experince Design team had signed up. 
+24 hours before this event I had no idea I was going to be giving a lightning talk. That the way life goes sometimes. It was the week of the innogrual Innovation Week and Driveway. Remote teammates had flown into town, folks were meeting each other in person for the first time and there were five days of fun activities, collaboration, and socializing. I was looking at the signups for the lighting talks and no one from the Experince Design team had signed up. 
 
 At that moment I decided I should probably represent our team and give a talk. I only had to think of something to talk about for about five minutes – easy, _right_?!
 
