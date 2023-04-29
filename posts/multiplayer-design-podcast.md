@@ -8,7 +8,7 @@ tags:
   - "2020"
 ---
 
-It has been a personal goal to start a podcast for a long time and I have finally put the idea into motion and am currently working on starting a podcast with a previous co-work <a href="https://georgeclingandesign.com/" title="Personal website of George Clingan">George Clingan</a> 
+It has been a personal goal to start a podcast for a long time and I have finally put the idea into motion and am currently working on starting a podcast with a previous co-worker <a href="https://georgeclingandesign.com/" title="Personal website of George Clingan">George Clingan</a> 
 
 We are just gettting started but are excited to share this show with the world. Here's our very first episode that we've recorded as an experiment. 
 
