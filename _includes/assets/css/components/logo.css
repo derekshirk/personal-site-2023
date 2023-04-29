@@ -3,15 +3,17 @@
 }
 
 .Logo {
-  height: var(--logo-size);
+  /* height: var(--logo-size); */
   transition: transform 350ms ease;
-  width: var(--logo-size);
+  /* width: var(--logo-size); */
+  width: 112px;
 }
 
-@media (max-width: 319px) {
+@media (--md-viewport) {
   .Logo {
-    height: 24px;
-    width: 24px;
+    /* height: 24px; */
+    /* width: 24px; */
+    width: auto;
   }
 }
 
