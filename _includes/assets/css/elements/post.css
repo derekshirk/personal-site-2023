@@ -34,30 +34,44 @@ article {
 
 
 @media (--md-viewport) {
- .ArticleCard-Action {
-  align-items: center;
-  background-color: rgba(var(--theme-color-max-contrast), 2%);
-  border-radius: 16px;
-  display:flex;
-  justify-content: space-between;
-  padding: 48px 40px;
-  &:hover {
-    background-color: rgba(var(--theme-color-max-contrast), 3%);
-    text-decoration: none;
+  .ArticleCard-Action {
+    align-items: center;
+    background-color: rgba(var(--theme-color-max-contrast), 2%);
+    border-radius: 16px;
+    display:flex;
+    justify-content: space-between;
+    padding: 48px 40px;
+    transition: transform 350ms ease;
+    
+    &:hover {
+      background-color: rgba(var(--theme-color-max-contrast), 3%);
+      text-decoration: none;
+      
+      .PostData {
+        transform: translateX(8px);
+      }
+
+      .ArticleCard-Icon {
+        transform: scale(1.49);
+      }
+    }
   }
- }
 }
 
+.PostData {
+  transition: transform 350ms ease;
+}
 
 .ArticleCard-Icon {
   min-width: 21px;
+  transition: transform 350ms ease;
 }
 
 .PostDate {
   color: var(--theme-color-text);
+  color: var(--color-gray);
   text-decoration: none;
 }
-
 
 @media (--md-viewport) {
   .PostDate {
@@ -65,6 +79,16 @@ article {
     min-width: 23%;
   }
 }
+
+/* @media (--lg-viewport) {
+  .PostDate {
+    transition: transform 350ms ease;
+
+    &:hover {
+      transform: translateX(32px);
+    }
+  }
+} */
 
 .PostTitleHero {
   font-size: 3em;

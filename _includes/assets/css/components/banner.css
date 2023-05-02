@@ -74,15 +74,15 @@
   }
 }
 
-@media (--xl-viewport) {
+/* @media (--xl-viewport) {
   .Banner-title {
     font-size: 3rem;
   }
-}
+} */
 
 @media (--xxl-viewport) {
   .Banner-title {
-    font-size: 4.3rem;
+    font-size: 4rem;
   }
 }
 
